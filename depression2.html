@@ -47,10 +47,11 @@
             background-color: #45a049;
         }
         .song {
-            margin-top: 10px;
+            margin-top: 5px;
+
         }
         .song a {
-            color: #4caf50;
+            color: #ffffff;
             text-decoration: none;
         }
         body {
@@ -188,6 +189,30 @@ label{
 
     font-size: 24px;
 }
+h3{
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+h5{
+  margin: 2px;
+  text-align: center;
+}
+#song-container h5{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#song-container p{
+  font-size: large;
+  background-color: #16a34a;
+  color: white;
+  width: fit-content;
+  text-align: center;
+  padding: 3px;
+  border-width: 2px;
+
+}
     </style>
 </head>
 <body>
@@ -210,10 +235,10 @@ label{
   </header>
     <main>
         <h1>SONG SUGGESTER</h1>
-        <p>Discover songs based on your mood</p>
+        <p>Discover songs based on your depression level</p>
     </main>
     <div class="container">
-        <h1 class="rate"><b>Rate Your Current Mood</b></h1>
+        <h1 class="rate"><b>Fill Your Depression Level</b></h1>
         <div class="question">
             <label for="mood-score">On a scale of 1 to 10, how are you feeling?<br> (1 = very low, 10 = very high)</label><br>
             <input type="number" id="mood-score" min="1" max="10" />
@@ -251,6 +276,7 @@ label{
             if (suggestion) {
                 songContainer.innerHTML = `
                     <h3>Suggested Song</h3>
+                    <h5> &darr; Click on the text given below &darr;<h5>
                     <p><a href="${suggestion.url}" target="_blank">${suggestion.title}</a></p>
                 `;
             }

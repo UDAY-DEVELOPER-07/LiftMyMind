@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (sectionId === "feedbackForm") {
         window.location.href = "dipression.html";
       } else if (sectionId === "aboutUs") {
-        window.location.href = "aboutus.html";
+        window.location.href = "AboutUs.html";
       }
     });
   });
