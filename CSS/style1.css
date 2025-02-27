@@ -61,7 +61,7 @@ body {
   }
   
   .background {
-    background-image: url('tYu0q5SZyvbgdIjQdU7PU.jpg'); /* Replace with your image file */
+    background-image: url('./assets/tYu0q5SZyvbgdIjQdU7PU.jpg'); /* Replace with your image file */
     background-size: cover;
     background-position: center;
     height: 100vh;
