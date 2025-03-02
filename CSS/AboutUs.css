@@ -6,7 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    .inter-font {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300px;
+        font-style: normal;
+      }
     background-color: #f5fff5; /* Light green background */
     color: #2e4a2e; /* Dark green text */
     line-height: 1.6;

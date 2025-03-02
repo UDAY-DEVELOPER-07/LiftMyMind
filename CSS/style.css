@@ -1,6 +1,12 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    .inter-font {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300px;
+      font-style: normal;
+    }
+    
     color: #333;
     background-color: #4a7c14;
     display: flex;
