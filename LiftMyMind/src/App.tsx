@@ -9,8 +9,8 @@ export default function App() {
         <div className="relative w-full mih-h-screen backdrop-blur-sm  z-[3] pt-40 pb-20 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center">
-              <h1 className="text-white text-4xl font-bold">Lift My Mind</h1>
-              <p className="text-gray-300 mt-4">Your journey to mental wellness starts here.</p>
+              <p className="bg-clip-text bg-gradient-to-b from-emerald-100 to-emerald-400 text-7xl text-transparent font-extrabold">Lift My Mind</p>
+              <p className="text-gray-200 text-xl mt-4">Your journey to mental wellness starts here.</p>
             </div>
           </div>
         </div>      
