@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
 
@@ -7,7 +7,7 @@ export default function MyVantaComponent () {
   const myRef = useRef(null);
 
   useEffect(() => {
-    let effect;
+    let effect: any;
   
     const initVanta = () => {
       if (!vantaEffect && myRef.current) {
