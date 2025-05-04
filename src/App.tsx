@@ -1,9 +1,11 @@
-import React from "react";
-import MyVantaComponent from "./components/background";
+
+import MyVantaComponent from "./components/ui/background";
+import VerticalTiles from "./components/ui/verticaltiles";
 
 export default function App() {
   return (
     <>
+      <VerticalTiles/>
       <div className="min-h-screen w-full flex justify-center   relative overflow-hidden">
           <MyVantaComponent />
         <div className="relative w-full mih-h-screen backdrop-blur-sm  z-[3] pt-40 pb-20 px-4">
