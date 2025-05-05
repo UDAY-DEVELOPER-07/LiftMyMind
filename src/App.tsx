@@ -1,5 +1,6 @@
 
 import MyVantaComponent from "./components/ui/background";
+import RippleButton from "./components/ui/btn1";
 import VerticalTiles from "./components/ui/verticaltiles";
 
 export default function App() {
@@ -14,6 +15,20 @@ export default function App() {
               <p className="bg-clip-text bg-gradient-to-b from-emerald-100 to-emerald-400 text-7xl text-transparent font-extrabold">Lift My Mind</p>
               <p className="text-gray-200 text-xl mt-4">Your journey to mental wellness starts here.</p>
             </div>
+            <RippleButton 
+            style={{
+              backgroundColor: "#cbfe7e",
+              color: "#0e352e",
+              border: "2px solid #0e352e",
+              padding: "10px 20px",
+              borderRadius: "5px",
+              fontWeight: "bold",
+              cursor: "pointer",
+              transition: "transform 0.2s",
+            }}
+            >
+              Get Started
+            </RippleButton>
           </div>
         </div>      
       </div>
