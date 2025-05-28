@@ -2,7 +2,6 @@ import MyVantaComponent from "../components/ui/background";
 import VerticalTiles from "../components/ui/verticaltiles";
 import ClickSpark from "../components/elements/Click";
 import GooeyNav from "../components/elements/Nav";
-import { VscHome, VscArchive, VscAccount, VscSettingsGear } from "react-icons/vsc";
 
 export default function App() {
   const items = [
