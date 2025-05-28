@@ -34,9 +34,20 @@ export default function MyVantaComponent () {
     };
   }, []);
 
-  return( 
-    <div 
-      ref={myRef} 
-      style={{ width: '100%', height: "100%",position: "fixed" , top: "0", left: "0", zIndex: "-1"}}/>);
+  return (
+    <div
+      ref={myRef}
+      style={{
+        width: '100%',
+        height: '100%',
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        zIndex: '-1',
+        transform: 'scale(1.2)', // Adjust the scale value to zoom in/out
+        transformOrigin: 'center center', // Optional: zoom from center
+      }}
+    />
+  );
 };
 
