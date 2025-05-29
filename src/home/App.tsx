@@ -2,6 +2,7 @@ import MyVantaComponent from "../components/ui/background";
 import VerticalTiles from "../components/ui/verticaltiles";
 import ClickSpark from "../components/elements/Click";
 import GooeyNav from "../components/elements/Nav";
+import RippleButton from "../components/elements/Btn1";
 
 export default function App() {
   const items = [
@@ -38,14 +39,22 @@ export default function App() {
               />
             </div>
             </div>
-            <div className="flex flex-col items-start justify-start h-max flex-1 mt-24">
-            <p className="bg-clip-text bg-gradient-to-b from-emerald-100 to-emerald-400 text-7xl text-transparent font-extrabold text-center">
-              Lift My Mind
+            <div className="flex flex-col items-center justify-start h-max flex-1 mt-24">
+              <p className="bg-clip-text bg-gradient-to-b via-emerald-100 from-white to-emerald-400 text-7xl z-20 text-transparent font-extrabold text-center">
+              YOUR MOOD
+              </p>
+              <p className="bg-clip-text bg-gradient-to-b via-emerald-100 from-white to-emerald-400 text-7xl z-5 text-transparent font-extrabold text-center">
+              HAS A SOUNDTRACK
             </p>
             <p className="text-gray-200 text-xl mt-4 text-center">
-              Your journey to mental wellness starts here.
+              Songs chosen to calm your mind and match your mood.
             </p>
-
+            <RippleButton 
+            className="font-jost m-3 duration-[600ms] relative flex items-center  justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105"
+            onClick={() => alert("Button Clicked!")}
+            >
+              Find Your Song 
+            </RippleButton>
           </div>
           </div>
           </ClickSpark>
