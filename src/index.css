@@ -7,3 +7,6 @@ body, html, #__next, #root {
   position: relative;
   background: transparent;
 }
+.text-stroke-3 {
+  -webkit-text-stroke: 1px white;
+}

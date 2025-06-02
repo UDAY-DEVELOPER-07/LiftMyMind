@@ -192,13 +192,14 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             position: absolute;
             inset: -75px;
             z-index: -2;
-            background: black;
+            background: rgba(0, 0, 0, 0.2); /* or try 0.05 for very subtle */
+  filter: blur(7px);
           }
           .effect.filter::after {
             content: "";
             position: absolute;
             inset: 0;
-            background: white;
+            background: transparent;
             transform: scale(0);
             opacity: 0;
             z-index: -1;
@@ -310,7 +311,7 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
             ref={navRef}
             className="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]"
             style={{
-              color: "white",
+              color: "black",
               textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
             }}
           >
