@@ -1,4 +1,5 @@
 import GooeyNav from "../ui/Nav";
+import myImage from '../../assets/images/img1.png';
 
 export default function Navbar() {
 
@@ -10,7 +11,7 @@ export default function Navbar() {
     return (
         <div className="fixed top-8 flex w-[80%] rounded-2xl bg-white/20 backdrop-blur-3xl justify-between pt-1 z-[20]">
             <div className="relative flex items-center justify-center">
-                <img src="src/assets/images/img1.png" className="w-24  z-10 pointer-events-none select-none" />
+                <img src={myImage} className="w-24  z-10 pointer-events-none select-none" />
                 <div className="flex items-center justify-center ">
                 <p className="text-gray-200 text-2xl p-1 text-center">
                     Lift My Mind

@@ -4,6 +4,7 @@ import ClickSpark from "../components/elements/Click";
 import RippleButton from "../components/elements/Btn1";
 import Navbar from "../components/elements/Navbar";
 import WhatWeDo from "../whatwedo.tsx/Page";
+import myImg1 from '../assets/images/headphone.png';
 
 export default function App() {
 
@@ -28,7 +29,7 @@ export default function App() {
                     YOUR MOOD
                   </p>
                   <img
-                    src="src/assets/images/headphone.png"
+                    src={myImg1}
                     className="absolute top-0 left-1/2 -translate-x-1/2 w-[340px] md:w-[500px] z-10 pointer-events-none select-none"
                     style={{ marginTop: '0.5rem' }}
                   />
