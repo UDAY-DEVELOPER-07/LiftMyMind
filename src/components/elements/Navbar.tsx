@@ -1,10 +1,11 @@
 import GooeyNav from "../ui/Nav";
 
 export default function Navbar() {
+
     const items = [
-        { label: "Home", href: "#" },
+        { label: "Home", href: "src/home/Page.tsx" },
         { label: "Song Suggestor", href: "#" },
-        { label: "Account", href: "#" },
+        { label: "About", href: "#About" },
     ];
     return (
         <div className="fixed top-8 flex w-[80%] rounded-2xl bg-white/20 backdrop-blur-3xl justify-between pt-1 z-[20]">

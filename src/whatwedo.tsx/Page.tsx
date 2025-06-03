@@ -69,7 +69,7 @@ export default function WhatWeDo() {
                     Based on your mood, we’ll recommend a song that uplifts and empowers.
                 </p>
                 <RippleButton
-                    className="font-jost m-3 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
+                    className="font-jost m-8 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
                     onClick={() => alert("Button Clicked!")}
                 >
                     Get Your Recommendations ♫
