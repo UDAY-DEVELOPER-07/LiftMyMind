@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 
 import { cn } from "../../../lib/utils";
@@ -15,15 +15,16 @@ interface VerticalTilesProps {
   animationDuration?: number;
   animationDelay?: number;
   stagger?: number;
+  tileColor?: string;
   children?: React.ReactNode;
 }
-
 export default function VerticalTiles({
   tileClassName,
   minTileWidth = 32,
   animationDuration = 0.5,
   animationDelay = 1,
   stagger = 0.05,
+  tileColor = "#2d3748", // default to Tailwind's bg-gray-800
   children,
 }: VerticalTilesProps) {
   const [tiles, setTiles] = useState<Tile[]>([]);
@@ -60,16 +61,18 @@ export default function VerticalTiles({
       {children}
 
       <div className="absolute inset-0 flex">
+      <div className="absolute inset-0 flex">
         {tiles.map((tile) => (
           <motion.div
             key={tile.id}
-            className={cn("bg-gray-800", tileClassName)}
+            className={cn(tileClassName)}
             style={{
               width: tile.width,
               position: "absolute",
               left: `${(tile.id * 100) / tiles.length}%`,
               top: 0,
               height: "100%",
+              backgroundColor: tileColor,
             }}
             initial={{ y: 0 }}
             animate={isInView ? { y: "100%" } : { y: 0 }}
@@ -80,6 +83,7 @@ export default function VerticalTiles({
             }}
           />
         ))}
+      </div>
       </div>
     </div>
   );

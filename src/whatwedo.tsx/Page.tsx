@@ -1,5 +1,4 @@
 import RippleButton from "../components/elements/Btn1";
-import { useNavigate } from "react-router-dom";
 
 interface CandItem {
     icon: string;
@@ -8,7 +7,6 @@ interface CandItem {
 }
 
 export default function WhatWeDo() {
-    const navigate = useNavigate();
 
 
     const Canditems = [
@@ -74,7 +72,7 @@ export default function WhatWeDo() {
                 </p>
                 <RippleButton
                     className="font-jost m-8 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
-                    onClick={() => navigate('/Song-Suggestor/page.tsx')}
+                    onClick={() => window.location.href = '/song'}
                 >
                     Get Your Recommendations ♫
                 </RippleButton>

@@ -2,18 +2,16 @@ import MyVantaComponent from "../components/ui/background";
 import VerticalTiles from "../components/ui/verticaltiles";
 import ClickSpark from "../components/elements/Click";
 import RippleButton from "../components/elements/Btn1";
-import Navbar from "../components/elements/Navbar";
 import WhatWeDo from "../whatwedo.tsx/Page";
 import myImg1 from '../assets/images/headphone.png';
 
-export default function App() {
+export default function Home() {
 
   return (
     <>
       <VerticalTiles />
       <div className="h-screen min-h-screen w-full fill flex justify-center relative overflow-hidden">
-        <MyVantaComponent />
-      <Navbar/>
+         <MyVantaComponent /> 
         <div className="relative  w-full flex flex-col items-center min-h-screen backdrop-blur-sm  z-[3] pt-12  px-4">
           <ClickSpark
             sparkColor='#fff'
@@ -44,7 +42,7 @@ export default function App() {
                   </p>
                     <RippleButton
                     className="font-jost m-3 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
-                    onClick={() => alert("Button Clicked!")}
+                    onClick={() => window.location.href = '/song' }
                     >
                     FIND YOUR SONG
                     </RippleButton>
