@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     return (
         <>
 
-            <div className="w-full mt-12 flex justify-center items-center py-6 bg-white/10 backdrop-blur-2xl text-gray-300 text-sm">
+            <div className="w-full  flex justify-center items-center py-6 bg-white/10 backdrop-blur-2xl text-gray-300 text-sm">
                 © {new Date().getFullYear()} Lift My Mind. All rights reserved.
             </div>
         </>

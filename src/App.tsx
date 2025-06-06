@@ -42,7 +42,10 @@ function App() {
                     <Route path="/about" element={<About />} />
                 </Routes>
             </div>
+            <div className="bg-black w-full fill flex justify-center relative overflow-hidden">
+
             <Footer />
+            </div>
         </>
     );
 }

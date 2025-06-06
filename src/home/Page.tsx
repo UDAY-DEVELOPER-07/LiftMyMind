@@ -1,5 +1,4 @@
 import MyVantaComponent from "../components/ui/background";
-import VerticalTiles from "../components/ui/verticaltiles";
 import ClickSpark from "../components/elements/Click";
 import RippleButton from "../components/elements/Btn1";
 import WhatWeDo from "../whatwedo.tsx/Page";
@@ -9,10 +8,11 @@ export default function Home() {
 
   return (
     <>
-      <VerticalTiles />
-      <div className="h-screen min-h-screen w-full fill flex justify-center relative overflow-hidden">
-         <MyVantaComponent /> 
-        <div className="relative  w-full flex flex-col items-center min-h-screen backdrop-blur-sm  z-[3] pt-12  px-4">
+      <div className="h-screen min-h-screen w-full bg-black flex justify-center relative overflow-hidden">
+        <div className="absolute inset-0 z-5">
+          <MyVantaComponent />
+        </div>
+        <div className="relative bg-transparent w-full flex flex-col items-center min-h-screen backdrop-blur-sm   z-[5] pt-12  px-4">
           <ClickSpark
             sparkColor='#fff'
             sparkSize={10}

@@ -1,14 +1,14 @@
 
 import MyVantaComponent from "../components/ui/background";
-import VerticalTiles from "../components/ui/verticaltiles";
 
 export default function SongSuggestorPage() {
   return (
         <>
-            <VerticalTiles />
-            <div className="h-screen min-h-screen w-full fill flex justify-center relative overflow-hidden">
-                <MyVantaComponent />
-                <div className="relative h-screen w-full flex flex-col items-center min-h-screen backdrop-blur-sm  z-[3] pt-12  px-4">
+            <div className="h-screen min-h-screen bg-black w-full fill flex justify-center relative overflow-hidden">
+                       <div className="absolute inset-0 z-5">
+                          <MyVantaComponent />
+                        </div>
+                <div className="relative h-screen w-full flex flex-col items-center min-h-screen backdrop-blur-sm  z-[5] pt-12  px-4">
                     <p className="absolute top-0 w-7xl left-1/2-translate-x-1/2 bg-clip-text  bg-gradient-to-b via-emerald-200 from-emerald-50 to-emerald-900 text-[700%] text-transparent z-5 font-extrabold text-center pointer-events-none select-none" style={{ marginTop: '9rem' }}>
                        Song Suggestor
                     </p>

@@ -1,4 +1,5 @@
 import RippleButton from "../components/elements/Btn1";
+import MyVantaComponent from "../components/ui/background";
 
 interface CandItem {
     icon: string;
@@ -33,8 +34,11 @@ export default function WhatWeDo() {
     ]
     return (
         <>
-            <div className="relative w-full h-screen flex flex-col items-center justify-center ">
-                <p className="relative w-7xl left-1/2-translate-x-1/2 bg-clip-text bg-gradient-to-b via-emerald-200 from-emerald-50 to-emerald-900 text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none">
+            <div className="absolute  bg-black inset-0 ">
+                <MyVantaComponent />
+            </div>
+            <div className="relative w-full bg-black h-screen flex flex-col items-center justify-center ">
+                <p className="relative w-7xl left-1/2-translate-x-1/2 bg-clip-text  bg-gradient-to-b via-emerald-200 from-emerald-50 to-emerald-900 text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none">
                     WHAT WE DO
                 </p>
                 <div className="w-[80%]  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
