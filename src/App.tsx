@@ -43,7 +43,6 @@ function App() {
                 </Routes>
             </div>
             <div className="bg-black w-full fill flex justify-center relative overflow-hidden">
-
             <Footer />
             </div>
         </>
