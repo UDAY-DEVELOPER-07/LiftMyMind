@@ -37,7 +37,7 @@ export default function WhatWeDo() {
             <div className="absolute  bg-black inset-0 ">
                 <MyVantaComponent />
             </div>
-            <div className="relative w-full bg-black h-screen flex flex-col items-center justify-center ">
+            <div className="relative w-full bg-transparent backdrop-blur-sm h-screen flex flex-col items-center justify-center ">
                 <p className="relative w-7xl left-1/2-translate-x-1/2 bg-clip-text  bg-gradient-to-b via-emerald-200 from-emerald-50 to-emerald-900 text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none">
                     WHAT WE DO
                 </p>
