@@ -83,7 +83,7 @@ function questionZone(handleBack:() => void,currentQuestion:string, satisfaction
 function getSongSuggestion(scoreCalculator: number) {
     const getSongSuggestion = () => {
         if (scoreCalculator < 30) {
-            window.location.href = 'https://www.youtube.com/watch?v=3JZ_D3ELwOQ'; // Sad song
+            window.location.href = 'https://youtu.be/JgDNFQ2RaLQ?si=pAzYr3K96QlyxDdR'; // Sad song
         } else if (scoreCalculator < 60) {
             window.location.href = 'https://www.youtube.com/watch?v=2Vv-BfVoq4g'; // Neutral song
         } else {

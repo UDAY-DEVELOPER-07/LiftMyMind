@@ -51,7 +51,7 @@ export default function Home() {
                   alt="Headphone"
                   />
                   <p
-                  className="absolute w-full left-1/2 -translate-x-1/2 top-[4rem] sm:top-[7rem] md:top-[6rem]  lg:top-[9rem] text-stroke-1 bg-clip-text bg-gradient-to-b  from-white via-emerald-400 to-emerald-900 text-transparent font-extrabold text-center select-none z-5 text-[2.5rem] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[8rem] leading-tight"
+                  className="absolute w-full left-1/2 -translate-x-1/2 top-[4rem] sm:top-[7rem] md:top-[6rem]  lg:top-[9rem] text-stroke-1 bg-clip-text bg-gradient-to-b  from-white via-emerald-400 to-emerald-900 text-transparent font-extrabold text-center select-none z-5 text-[40px] sm:text-[3rem] md:text-[4.5rem] lg:text-[6rem] xl:text-[8rem] leading-tight"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   >
