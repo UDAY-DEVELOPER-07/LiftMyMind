@@ -18,8 +18,8 @@ function App() {
         <>
             <div className="fixed top-2 left-1/2 -translate-x-1/2 flex w-[98%] sm:w-[95%] md:w-[80%] rounded-xl md:rounded-2xl bg-white/20 backdrop-blur-3xl pt-1 z-[20] items-center justify-between px-2 sm:px-3 md:px-6 shadow-lg flex-col md:flex-row gap-2 md:gap-0">
             <div className="flex items-center gap-2 md:gap-3 w-full md:w-auto justify-center md:justify-start">
-                <img src={myImage} className="w-10 h-10 sm:w-12 sm:h-12 md:w-20 md:h-20 object-contain pointer-events-none select-none" alt="Lift My Mind Logo" />
-                <p className="text-gray-200 text-base sm:text-lg md:text-2xl font-semibold text-center md:text-left">Lift My Mind</p>
+                <img src={myImage} className="w-15 h-15 sm:w-15 sm:h-15 md:w-20 md:h-20 object-contain pointer-events-none select-none" alt="Lift My Mind Logo" />
+                <p className="text-gray-200 text-xl sm:text-xl  md:text-2xl font-extrabold text-center md:text-left">Lift My Mind</p>
             </div>
             <div className="flex items-center font-bold justify-center w-full md:w-auto">
                 <GooeyNav
