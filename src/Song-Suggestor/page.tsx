@@ -3,7 +3,8 @@ import ElasticSlider from "../components/ui/slider";
 import { useState } from "react";
 import { questions } from "../components/elements/questions";
 import SlideArrowButton from "../components/elements/slide-arrow-button";
-import RippleButton from "../components/elements/Btn1";
+import RippleButton from "../components/elements/Btn1"; 
+import myImg from "../assets/images/aboutimg.png"
 
 function scoreCalculator({score}: {score: number[]}) {
     const totalScore = score.reduce((acc, curr) => acc + curr, 0);
@@ -53,11 +54,12 @@ function questionZone(handleBack:() => void,currentQuestion:string, satisfaction
                 className="w-full text-white max-w-md"
             />
             <div className="flex justify-between w-full max-w-md mt-10">
+    
                 <button className="px-6 py-2 bg-gray-500 text-white rounded-lg font-semibold hover:bg-gray-800 transition"
                     onClick={() => {
                         handleBack();
                     }}
-
+                    name="Back"
                 >
                     Back
                 </button>
@@ -89,13 +91,17 @@ function getSongSuggestion(scoreCalculator: number) {
         }
     }
     return (
-        <div>
+        <div className=" flex  flex-col justify-center items-center"> 
+
+            <img src={myImg} className="w-100  "></img>
+            <div className="flex justify-center">
             <RippleButton
-                className="font-jost m-3 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
+                className="font-jost m-3 duration-[600ms] relative flex items-center justify-center  overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
                 onClick={() => getSongSuggestion()}
             >
                 Get Your Song
             </RippleButton>
+            </div>
         </div>
     );    
 }
@@ -103,7 +109,7 @@ function getSongSuggestion(scoreCalculator: number) {
 
 
 export default function SongSuggestorPage() {
-    const [satisfaction, setSatisfaction] = useState(50);
+    const [satisfaction, setSatisfaction] = useState(0);
     const [i , setI] = useState(0);
     const [score, setScore] = useState(Array(questions.length).fill(0));
     const [currentQuestion, setCurrentQuestion] = useState('LET\'S START!');
@@ -115,7 +121,7 @@ export default function SongSuggestorPage() {
         if(i < questions.length){
             setI(i + 1);
             setCurrentQuestion(questions[i].question);
-            setSatisfaction(50); 
+            setSatisfaction(0); 
         } else {
             setI(11);
             return;
@@ -125,7 +131,7 @@ export default function SongSuggestorPage() {
     const handleBack = () => {
         setI(i - 1);
         setCurrentQuestion(questions[i - 2].question);
-        setSatisfaction(50);
+        setSatisfaction(0);
 
     };
     const handlePanel = () => {
@@ -143,14 +149,18 @@ export default function SongSuggestorPage() {
             <div className="absolute inset-0 z-0">
                 <MyVantaComponent />
             </div>
-            <div className="relative flex flex-col items-center w-full min-h-screen backdrop-blur-sm z-10 pt-32 px-4">
-                <h1 className="text-[700%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white  via-emerald-400 to-emerald-900 text-center select-none pointer-events-none mb-6">
+            <div className="relative flex flex-col items-center w-full min-h-screen z-10 px-2 sm:px-4 mt-32 md:mt-20 lg:mt-10   ">
+                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[700%] font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white via-emerald-400 to-emerald-900 text-center select-none pointer-events-none mb-4 sm:mb-6">
                     Song Suggestor
                 </h1>
-                <p className="text-xl font-extrabold text-[#CADBD5] text-center select-none pointer-events-none mb-16">
+                <p className="text-base sm:text-lg md:text-xl font-extrabold text-[#CADBD5] text-center select-none pointer-events-none mb-8 sm:mb-16">
                     Fill out the form below to get a song that matches your mood.
                 </p>
-                {handlePanel()}
+                <div className="w-full flex justify-center">
+                    <div className="w-full max-w-2xl">
+                        {handlePanel()}
+                    </div>
+                </div>
             </div>
         </div>
     );

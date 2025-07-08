@@ -302,40 +302,40 @@ const GooeyNav: React.FC<GooeyNavProps> = ({
           }
         `}
       </style>
-      <div className="relative" ref={containerRef}>
+      <div className="relative py-2" ref={containerRef}>
         <nav
           className="flex relative"
           style={{ transform: "translate3d(0,0,0.01px)" }}
         >
           <ul
-            ref={navRef}
-            className="flex gap-8 list-none p-0 px-4 m-0 relative z-[3]"
-            style={{
-              color: "black",
-              textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
-            }}
+        ref={navRef}
+        className="flex justify-around gap-4 sm:gap-6 md:gap-8 list-none p-0 px-2 sm:px-4 m-0 relative z-[3]"
+        style={{
+          color: "black",
+          textShadow: "0 1px 1px hsl(205deg 30% 10% / 0.2)",
+        }}
           >
-            {items.map((item, index) => (
-              <li
-                key={index}
-                className={`py-[0.6em] px-[1em] rounded-full relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white ${
-                  activeIndex === index ? "active" : ""
-                }`}
-                onClick={(e) => handleClick(e, index)}
-              >
-                <a
-                  href={item.href}
-                  onKeyDown={(e) => handleKeyDown(e, index)}
-                  className="outline-none"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
+        {items.map((item, index) => (
+          <li
+            key={index}
+            className={`py-2 px-4 sm:py-[0.6em] sm:px-[1em] rounded-full relative cursor-pointer transition-[background-color_color_box-shadow] duration-300 ease shadow-[0_0_0.5px_1.5px_transparent] text-white text-sm sm:text-base ${
+          activeIndex === index ? "active" : ""
+            }`}
+            onClick={(e) => handleClick(e, index)}
+          >
+            <a
+          href={item.href}
+          onKeyDown={(e) => handleKeyDown(e, index)}
+          className="outline-none block"
+            >
+          {item.label}
+            </a>
+          </li>
+        ))}
           </ul>
         </nav>
-        <span className="effect filter" ref={filterRef} />
-        <span className="effect text" ref={textRef} />
+        {/* Responsive effect overlays */}
+
       </div>
     </>
   );

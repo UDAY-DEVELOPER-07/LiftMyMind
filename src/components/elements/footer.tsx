@@ -1,15 +1,25 @@
-import * as React from 'react';
 
 
-const Footer: React.FC = () => {
+export default function Footer() {
     return (
         <>
-
-            <div className="w-full  flex justify-center items-center py-6 bg-white/10 backdrop-blur-2xl text-gray-300 text-sm">
-                © {new Date().getFullYear()} Lift My Mind. All rights reserved.
+            <div className="absolute bottom-0 w-full h-fit   bg-white/10 backdrop-blur-2xl text-gray-300 pt-4  text-center z-20">
+                <p className="text-sm md:text-base">
+                    Created with ❤️ by Uday Pratap Singh and contributors.
+                </p>
+                <div className="mt-4 py-0 flex justify-center gap-4">
+                    <a href="https://lift-my-mind.vercel.app/" className="text-sm md:text-base text-emerald-300 hover:underline">
+                        Back to Home
+                    </a>
+                    <h5>GitHub</h5> 
+                    <a href="https://github.com/UDAY-DEVELOPER-07/LiftMyMind.git" className="text-sm md:text-base text-emerald-300 hover:underline ml-2">
+                        Lift My Mind
+                    </a>
+                </div>
+                <p className="text-xs md:text-sm mt-2">
+                    © {new Date().getFullYear()} Lift My Mind. All rights reserved.
+                </p>
             </div>
         </>
     );
 };
-
-export default Footer;

@@ -8,8 +8,6 @@ interface CandItem {
 }
 
 export default function WhatWeDo() {
-
-
     const Canditems = [
         {
             icon: "🧠",
@@ -31,23 +29,23 @@ export default function WhatWeDo() {
             title: "Enjoy the Soundtrack",
             description: "Immerse yourself in a personalized musical experience designed to uplift and soothe your mind.",
         },
-    ]
+    ];
     return (
         <>
-            <div className="absolute  bg-black inset-0 ">
+            <div className="absolute bg-black inset-0">
                 <MyVantaComponent />
             </div>
-            <div className="relative w-full bg-transparent backdrop-blur-sm h-screen flex flex-col items-center justify-center ">
-                <p className="relative w-7xl left-1/2-translate-x-1/2 bg-clip-text  bg-gradient-to-b via-emerald-200 from-emerald-50 to-emerald-900 text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none">
+            <div className="relative w-full min-h-screen flex flex-col items-center mt-[-5rem] sm:mt-[0rem] md:mt-[0rem] justify-center px-4 py-8">
+                <p className="relative max-w-5xl mx-auto bg-clip-text bg-gradient-to-b  from-white via-emerald-400 to-emerald-900 text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none mb-8">
                     WHAT WE DO
                 </p>
-                <div className="w-[80%]  grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+                <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {Canditems.map((item: CandItem, index: number) => (
                         <div
                             key={index}
                             className={`
                                 relative group
-                                p-1 h-[400px]
+                                p-1 h-[340px] sm:h-[330px] md:h-[300px] lg:h-[400px]
                                 rounded-xl
                                 backdrop-blur-sm
                                 border border-white/10
@@ -55,27 +53,26 @@ export default function WhatWeDo() {
                                 justify-center
                                 items-center
                             `}
-                            >
-                            <div className="relative h-full flex justify-center  flex-col bg-black/40 rounded-lg p-6">
-                                <div className="text-5xl mb-6 ">
+                        >
+                            <div className="relative h-fit   flex justify-center flex-col bg-black/40 rounded-lg p-4 sm:p-6">
+                                <div className="text-4xl sm:text-5xl mb-4 sm:mb-6">
                                     {item.icon}
                                 </div>
-                                <h3 className="text-2xl font-semibold text-white mb-4">
+                                <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 sm:mb-4">
                                     {item.title}
                                 </h3>
-                                <p className="text-gray-300 flex-grow">
+                                <p className="text-gray-300 flex-grow text-sm sm:text-base">
                                     {item.description}
                                 </p>
-
                             </div>
                         </div>
                     ))}
                 </div>
-                <p className="text-gray-200 text-xl mt-6 text-center">
+                <p className="text-gray-200 text-base sm:text-lg md:text-xl mt-6 text-center max-w-2xl">
                     Based on your mood, we’ll recommend a song that uplifts and empowers.
                 </p>
                 <RippleButton
-                    className="font-jost m-8 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] p-[1.3rem] text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
+                    className="font-jost m-6 sm:m-8 duration-[600ms] relative flex items-center justify-center overflow-hidden rounded-full bg-[#036041] px-6 py-3 sm:p-[1.3rem] text-base sm:text-[1.2rem] font-extrabold text-[#D0E3DD] transition hover:text-white hover:bg-[#D0E3DD] hover:shadow-lg hover:shadow-[#D0E3DD] hover:scale-105 uppercase"
                     onClick={() => window.location.href = '/song'}
                 >
                     Get Your Recommendations ♫
