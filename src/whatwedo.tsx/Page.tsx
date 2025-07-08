@@ -36,7 +36,7 @@ export default function WhatWeDo() {
                 <MyVantaComponent />
             </div>
             <div className="relative w-full min-h-screen flex flex-col items-center mt-[-5rem] sm:mt-[0rem] md:mt-[0rem] justify-center px-4 py-8">
-                <p className="relative max-w-5xl mx-auto bg-clip-text bg-gradient-to-b  from-white via-emerald-400 to-emerald-900 text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none mb-8">
+                <p className="relative max-w-5xl mx-auto bg-clip-text bg-gradient-to-b  from-white via-emerald-400 to-emerald-900 text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[700%] z-20 text-transparent font-extrabold text-center pointer-events-none select-none mb-8">
                     WHAT WE DO
                 </p>
                 <div className="w-full max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
