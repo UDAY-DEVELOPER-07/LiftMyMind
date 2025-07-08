@@ -46,7 +46,7 @@ export default function Home() {
                   </p>
                   <img
                   src={imgSrc}
-                  className="absolute top-[1rem] sm:top-5 md:top-6 xl:top-6 left-1/2 -translate-x-1/2 w-[300px] sm:w-[300px] md:w-[400px] lg:w-[440px] xl:w-[520px] pointer-events-none select-none"
+                  className="absolute top-[0.5rem] sm:top-5 md:top-6 xl:top-6 left-1/2 -translate-x-1/2 w-[300px] sm:w-[300px] md:w-[400px] lg:w-[440px] xl:w-[520px] pointer-events-none select-none"
                   style={{ zIndex: zindex }}
                   alt="Headphone"
                   />
