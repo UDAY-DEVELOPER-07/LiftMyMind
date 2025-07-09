@@ -7,7 +7,7 @@ import myImg1 from '../assets/images/headphone.png';
 import myImg2 from '../assets/images/headphone_vector.png';
 
 export default function Home() {
-  const [zindex, setZIndex] = useState(0);
+  const [zindex, setZIndex] = useState(10);
   const [imgSrc, setImgSrc] = useState(myImg1);
 
   const handleMouseEnter = () => {
@@ -46,7 +46,7 @@ export default function Home() {
                   </p>
                   <img
                   src={imgSrc}
-                  className="absolute top-[0.5rem] sm:top-5 md:top-6 xl:top-6 left-1/2 -translate-x-1/2 w-[300px] sm:w-[300px] md:w-[400px] lg:w-[440px] xl:w-[520px] pointer-events-none select-none"
+                  className="absolute top-[0.5rem] sm:top-5  md:top-6 xl:top-6 left-1/2 -translate-x-1/2 w-[300px] sm:w-[300px] md:w-[400px] lg:w-[440px] xl:w-[520px] pointer-events-none select-none"
                   style={{ zIndex: zindex }}
                   alt="Headphone"
                   />
@@ -73,7 +73,7 @@ export default function Home() {
           </ClickSpark>
         </div>
       </div>
-      <div className="relative w-full min-h-[60vh] md:h-screen z-[10] flex flex-col items-center justify-start flex-1 mb-10">
+      <div className="relative w-full min-h-[60vh] md:h-screen z-[10] flex flex-col items-center justify-start flex-1 mb-25">
         <WhatWeDo />
       </div>
     </>

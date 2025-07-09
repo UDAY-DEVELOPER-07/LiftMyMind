@@ -41,7 +41,7 @@ function App() {
                 <Route path="/about" element={<About />} />
             </Routes>
             </div>
-            <div className="bottom-0 w-full h-fit bg-black/50 backdrop-blur-2xl text-gray-300 pt-4 text-center z-40">
+            <div className="bottom-0 w-full h-fit bg-black/50 backdrop-blur-2xl text-gray-300 pt-4 text-center z-50">
                 <Footer />
             </div>
         </>
