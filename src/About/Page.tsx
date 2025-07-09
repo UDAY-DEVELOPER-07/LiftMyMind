@@ -1,7 +1,7 @@
 
 import MyVantaComponent from "../components/ui/background";
 import RippleButton from "../components/elements/Btn1";
-
+import img from "../assets/images/aboutimg.png"
 export default function About() {
     const content = {
         title: "About Us",
@@ -35,13 +35,13 @@ We start with a simple, intuitive mood check-in to understand how you’re feeli
                 </RippleButton>
             </div>
             <img
-                src="src/assets/images/aboutimg.png"
+                src={img}
                 alt="About Decorative Left"
                 className="hidden md:block absolute left-[-17%] bottom-15 w-0 md:w-1/3 max-w-xl z-10  pointer-events-none select-none"
             />
             <img
-                src="src/assets/images/aboutimg.png"
-                alt="About Decorative Right"
+                src={img}
+                alt=""
                 className="hidden md:block absolute right-[-17%] bottom-15 w-1/3 max-w-xl z-10 pointer-events-none select-none"
             />
 
